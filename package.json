@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "prisma db push && prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
-    "@react-pdf/renderer": "^4.5.1",
     "@tailwindcss/postcss": "^4.2.4",
     "autoprefixer": "^10.5.0",
     "lucide-react": "^0.462.0",
